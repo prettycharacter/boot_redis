@@ -1,0 +1,25 @@
+# 增加redis的配置
+spring:
+  redis:
+    #redis的数据库索引，默认为0
+    database: 0
+    #redis服务器地址
+    host: 127.0.0.1
+    #redis 服务器端口
+    port: 6379
+    password: xykj.8387
+    redis:
+      pool:
+        # 连接池最大连接数
+        max-active: 200
+        # 阻塞等待时间
+        max-wait: -1
+        #最大空闲连接
+        max-idle: 10
+        #最小空闲连接
+        min-idle: 10
+    # 连接超时时间
+    timeout: 1000
+server:
+  #服务端口
+  port: 8888
